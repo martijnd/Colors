@@ -52,7 +52,7 @@ function changeColor(){
 		$('body').css("background-color", $(this).css('background-color'))
 	}),
 	$("#blok15").hover(function(){
-		$('body').css("background-color", $(this).css('background-color')),$('#hilda').css("display", "block")
+		$('body').css("background-color", $(this).css('background-color')),$('#hilda').css("opacity", "1")
 	})
 
 }
