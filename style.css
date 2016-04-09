@@ -169,5 +169,6 @@ body {
 @media all and (max-width: 1041px){
 	#hilda {
 		font-size:3em;
+		width:70%;
 	}
 }
