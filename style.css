@@ -129,7 +129,6 @@ body {
 .imghover {
     -webkit-filter: drop-shadow(2px 2px 2px #222);
     margin-top:2% !important;
-    margin-left:-4%;
     width:150px !important;
 }
 
