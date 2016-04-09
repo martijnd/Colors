@@ -2,6 +2,7 @@ $(document).ready(function(){
 	resize();
 	changeColor();
 	menu();
+	logo();
 });
 
 function resize(){
@@ -16,6 +17,12 @@ function menu(){
 		$("#bottom").toggleClass("crossright"),
 		$("#nav").toggleClass("navclicked"),
 		$("#titel").toggleClass("titelclicked")
+	})
+}
+
+function logo(){
+	$("#logo").hover(function(){
+		$("#img").toggleClass("imghover")
 	})
 }
 

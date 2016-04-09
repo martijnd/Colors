@@ -77,6 +77,22 @@ body {
 	font-weight: bold;
 }
 
+#logo {
+	margin-left:45%;
+}
+
+#img {
+	width:100px;
+	transition: .5s;
+}
+
+.imghover {
+    -webkit-filter: drop-shadow(2px 2px 2px #222);
+    margin-top:2%;
+    margin-left:-0.5%;
+    width:120px !important;
+}
+
 .titelclicked {
 	color: black !important;
 }
