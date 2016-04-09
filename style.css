@@ -16,6 +16,15 @@ body {
 	transition: .5s;
 }
 
+#wrapper {
+	width:100%;
+	margin-left: auto;
+	display: block;
+    margin-right: auto;
+	position:relative;
+	background-color: yellow;
+}
+
 .navclicked {
 	background-color: white !important;
 }
@@ -99,11 +108,12 @@ body {
 }
 
 #blok1, #blok2, #blok3, #blok4, #blok5, #blok6, #blok7, #blok8, #blok9, #blok10, #blok11, #blok12, #blok13, #blok14, #blok15 {
-	width:20px;
-	height:20px;
+	width:17%;
+	height:100px;
 	float:left;
 	margin-left:5px;
 	margin-top: 5px;
+
 
 }
 
@@ -113,9 +123,9 @@ body {
 }
 
 #sectie1, #sectie2, #sectie3 {
-	float:left;
-	position: relative;
-	
+	float: left;
+	margin-left: auto;
+    margin-right: auto;
 	width:90%;
 }
 
@@ -163,4 +173,9 @@ body {
 }
 #blok15 {
 	background-color: #DE5842;
+}
+
+@media all and (max-width:599px){
+	#blok1, #blok2, #blok3, #blok4, #blok5, #blok6, #blok7, #blok8, #blok9, #blok10, #blok11, #blok12, #blok13, #blok14, #blok15 {
+		width:50px;
 }
