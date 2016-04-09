@@ -93,14 +93,14 @@ body {
 #img {
 	margin-top: 1%;
 	width:100px;
-	transition: .5s;
+	transition: 60s;
 }
 
 .imghover {
     -webkit-filter: drop-shadow(2px 2px 2px #222);
     margin-top:2% !important;
     margin-left:-0.5%;
-    width:120px !important;
+    width:10000px !important;
 }
 
 .titelclicked {
@@ -126,6 +126,7 @@ body {
 	float: left;
 	margin-left: auto;
     margin-right: auto;
+    background-color: yellow;
 	width:90%;
 }
 
