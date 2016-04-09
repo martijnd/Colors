@@ -19,7 +19,7 @@ function menu(){
 		$("#bottom").toggleClass("crossright"),
 		$("#nav").toggleClass("navtopclicked"),
 		$("#titel").toggleClass("titelclicked"),
-		$("#wrapper").toggleClass("navsideclicked"),
+		$("#navwrapper").toggleClass("navsideclicked"),
 		blokshow();
 		});
 		}

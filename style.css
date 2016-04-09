@@ -8,32 +8,36 @@ body {
 #nav {
 	width:98.5%;
 	position: fixed;
-	z-index: 1;
+	z-index: 2;
 	height:10%;
 	height: 55px;
+	margin-top:10px;
 	background-color: #4285f4;
 	box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
-	transition: .2s;
+	transition: .5s;
+	top:0;
 }
 
 #nav:hover {
 	background-color: #8bb1f1;
 }
 
-#wrapper {
+#navwrapper {
 	width: 15%; 
+	top:0;
 	min-width:180px;
-	opacity:0;
+	display:none;
+	z-index: 1;
   	min-height: 300px;
 	padding-left:1%;
 	background-color:white;
-	position: absolute;
-	margin-top:54px;
+	position: fixed;
+	margin-top:65px;
 	transition: all .5s ease;
 	box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
 }
 
-#wrapper:after {
+#navwrapper:after {
 	content: " "; 
     display: block;
     clear: both;
@@ -45,7 +49,7 @@ body {
 
 .navsideclicked {
 	width: 15% !important;
-	opacity: 1 !important;
+	display: inline !important;
 }
 
 #hamburgerwrap {
@@ -125,8 +129,8 @@ body {
 .imghover {
     -webkit-filter: drop-shadow(2px 2px 2px #222);
     margin-top:2% !important;
-    margin-left:-0.5%;
-    width:120px !important;
+    margin-left:-4%;
+    width:150px !important;
 }
 
 .titelclicked {
@@ -197,4 +201,22 @@ body {
 }
 #blok15 {
 	background-color: #DE5842;
+}
+
+#wrapper {
+	margin-top: 130px;
+	position:relative;
+	margin-left:1%;
+	width:96%;
+	height:500px;
+	display: block;
+	background-color: white;
+	box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
+}
+
+#box1 {
+	padding-top:20px;
+	padding-left: 32px;
+	font-family: "Helvetica Light";
+	font-size: 5em;
 }
