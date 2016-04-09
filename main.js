@@ -1,12 +1,23 @@
 $(document).ready(function(){
 	resize();
 	changeColor();
+	menu();
 });
 
 function resize(){
 	$(document).height($(window).height());
 	$(document).width($(window).width());
 };
+
+function menu(){
+	$("#hamburgerwrap").click(function(){
+		$("#top").toggleClass("crossleft"),
+		$("#middle").toggleClass("displaynone"),
+		$("#bottom").toggleClass("crossright"),
+		$("#nav").toggleClass("navclicked"),
+		$("#titel").toggleClass("titelclicked")
+	})
+}
 
 function changeColor(){
 	$("#blok1").hover(function(){

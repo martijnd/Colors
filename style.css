@@ -1,89 +1,169 @@
 body {
 	background-color: #ccc;
 	font-family:Helvetica, Verdana;
+	margin:0;
+	padding:0;
 	transition: 0.5s;
 }
 
+#nav {
+	width:100%;
+	position: fixed;
+	z-index: 1;
+	height:10%;
+	height: 55px;
+	background-color: #4285f4;
+	box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
+	transition: .5s;
+}
+
+.navclicked {
+	background-color: white !important;
+}
+
+#hamburgerwrap {
+	width: 70px;
+	min-height: 35px;
+	padding-top:19px;
+	float:left;
+}
+
+.hamburger {
+    width:18px;
+    height:2px;
+    margin-left:50%;
+    margin-top:3px;
+    background-color:#ffffff;
+    position:relative;
+}
+
+#top {
+    transition: all .25s ease;
+}
+
+#middle {
+    transition: all .25s ease;
+}
+
+#bottom {
+    transition: all .25s ease;
+}
+
+.crossleft {
+    margin-top:10px !important;
+    transform:rotate(45deg);
+    background-color: black !important;
+}
+
+.displaynone {
+    display:none;
+    transition: all .25s ease;
+}
+
+.crossright {
+    margin-top:-2px !important;
+    transform:rotate(135deg);
+    background-color: black !important;
+}
+
+#titel {
+	float:left;
+	margin-left: 1%;
+	vertical-align: middle;
+	line-height: 60px;  
+	color:white;
+	font-size: 1.2em;
+	transition: .5s;
+	font-weight: bold;
+}
+
+.titelclicked {
+	color: black !important;
+}
 
 #blok1, #blok2, #blok3, #blok4, #blok5, #blok6, #blok7, #blok8, #blok9, #blok10, #blok11, #blok12, #blok13, #blok14, #blok15 {
 	width:17%;
 	height:200px;
 	float:left;
-	margin: 1%;
+	margin-left:5px;
+	margin-top: 3%;
 	box-shadow: 10px 10px 5px rgba(0,0,0,0.3);
-	 border-radius: 10px;
 
+}
+
+#sectie1 {
+	margin-top: 70px;
 }
 
 #sectie1, #sectie2, #sectie3 {
 	float:left;
 	position: relative;
-	width:100%;
+	padding-left:10%;
+	width:90%;
 }
 
 #blok1 {
-	background-color: #FF5722;
+	background-color: #588C7E;
 }
 #blok2 {
-	background-color: #FF9800;
+	background-color: #F2E394;
 }
 #blok3 {
-	background-color: #FFC107;
+	background-color: #F2AE72;
 }
 #blok4 {
-	background-color: #FFEB3B;
+	background-color: #8C4646;
 }
 #blok5 {
-	background-color: #CDDC39;
+	background-color: #8C4646;
 }
 #blok6 {
-	background-color: #8BC34A;
+	background-color: #69D2E7;
 }
 #blok7 {
-	background-color: #4CAF50;
+	background-color: #A7DBDB;
 }
 #blok8 {
-	background-color: #009688;
+	background-color: #E0E4CC;
 }
 #blok9 {
-	background-color: #00BCD4;
+	background-color: #F38630;
 }
 #blok10 {
-	background-color: #03A9F4;
+	background-color: #FA6900;
 }
 #blok11 {
-	background-color: #2196F3;
+	background-color: #A2D7D8;
 }
 #blok12 {
-	background-color: #3F51B5;
+	background-color: #BFE1BF;
 }
 #blok13 {
-	background-color: #673AB7;
+	background-color: #EDEDEA;
 }
 #blok14 {
-	background-color: #9C27B0;
+	background-color: #EDEDEA;
 }
 #blok15 {
-	background-color: #E91E63;
+	background-color: #DE5842;
 }
 
 #hilda {
-	
+	width:30%;
 	opacity: 0;
 	transition: 3.5s;
-	width:100%;
-	height:200px;
-	background-color: #ccc;
+	background:rgba(255,255,255,0.3);
 	font-weight: bold;
-	font-size:8em;
+	font-size:4em;
 	margin:auto;
+	margin-top:2%;
+	text-shadow:2px 2px 3px #666666;
+	color: white;
 	text-align:center;
 	overflow:auto;
 	vertical-align: middle;
-	line-height: 200px;  
-	background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
-  	color:transparent;
-    -webkit-background-clip: text;
+	z-index: 2;
+	line-height: 125px;  
 }
 
 @media all and (max-width: 1041px){
