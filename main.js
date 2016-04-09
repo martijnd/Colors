@@ -3,7 +3,6 @@ $(document).ready(function(){
 	changeColor();
 	menu();
 	logo();
-	hide();
 });
 
 function resize(){
@@ -11,108 +10,17 @@ function resize(){
 	$(document).width($(window).width());
 };
 
-function hide(){
-	$("#blok1").hide();
-	$("#blok2").hide();
-	$("#blok3").hide();
-	$("#blok4").hide();
-	$("#blok5").hide();
-	$("#blok6").hide();
-	$("#blok7").hide();
-	$("#blok8").hide();
-	$("#blok9").hide();
-	$("#blok10").hide();
-	$("#blok11").hide();
-	$("#blok12").hide();
-	$("#blok13").hide();
-	$("#blok14").hide();
-	$("#blok15").hide();
 
-}
 
 function menu(){
 	$("#hamburgerwrap").click(function(){
 		$("#top").toggleClass("crossleft"),
 		$("#middle").toggleClass("displaynone"),
 		$("#bottom").toggleClass("crossright"),
-		$("#nav").toggleClass("navclicked"),
+		$("#nav").toggleClass("navtopclicked"),
 		$("#titel").toggleClass("titelclicked"),
-
-		$("#blok1").delay(250).queue(function(){
-			$(this).fadeToggle(500, "linear");
-			$(this).dequeue();
-		
-		$("#blok2").delay(250).queue(function(){
-			$(this).fadeToggle(500, "linear");
-			$(this).dequeue();
-		
-		$("#blok3").delay(250).queue(function(){
-			$(this).fadeToggle(500, "linear");
-			$(this).dequeue();
-		
-		$("#blok4").delay(250).queue(function(){
-			$(this).fadeToggle(500, "linear");
-			$(this).dequeue();
-		
-		$("#blok5").delay(250).queue(function(){
-			$(this).fadeToggle(500, "linear");
-			$(this).dequeue();
-
-		$("#blok6").delay(250).queue(function(){
-			$(this).fadeToggle(500, "linear");
-			$(this).dequeue();
-
-		$("#blok7").delay(250).queue(function(){
-			$(this).fadeToggle(500, "linear");
-			$(this).dequeue();	
-		
-		$("#blok8").delay(250).queue(function(){
-			$(this).fadeToggle(500, "linear");
-			$(this).dequeue();
-
-		$("#blok9").delay(250).queue(function(){
-			$(this).fadeToggle(500, "linear");
-			$(this).dequeue();
-		
-		$("#blok10").delay(250).queue(function(){
-			$(this).fadeToggle(500, "linear");
-			$(this).dequeue();
-		
-		$("#blok11").delay(250).queue(function(){
-			$(this).fadeToggle(500, "linear");
-			$(this).dequeue();
-		
-		$("#blok12").delay(250).queue(function(){
-			$(this).fadeToggle(500, "linear");
-			$(this).dequeue();
-
-		$("#blok13").delay(250).queue(function(){
-			$(this).fadeToggle(500, "linear");
-			$(this).dequeue();
-		
-		$("#blok14").delay(250).queue(function(){
-			$(this).fadeToggle(500, "linear");
-			$(this).dequeue();
-		
-		$("#blok15").delay(250).queue(function(){
-			$(this).fadeToggle(500, "linear");
-			$(this).dequeue();
-								
-		});
-		});
-		});
-		});
-		});
-		});
-		});
-		});
-		});
-		});
-		});
-		});
-		});
-		});
-		});
+		$("#wrapper").toggleClass("navsideclicked"),
+		blokshow();
 		});
 		}
 
@@ -169,6 +77,25 @@ function changeColor(){
 	$("#blok15").click(function(){
 		$('body').css("background-color", $(this).css('background-color')),$('#hilda').css("opacity", "1")
 	})
+
+}
+
+function blokshow(){
+	$("#blok1").toggleClass('displayblok'),
+	$("#blok2").toggleClass('displayblok'),
+	$("#blok3").toggleClass('displayblok'),
+	$("#blok4").toggleClass('displayblok'),
+	$("#blok5").toggleClass('displayblok'),
+	$("#blok6").toggleClass('displayblok'),
+	$("#blok7").toggleClass('displayblok'),
+	$("#blok8").toggleClass('displayblok'),
+	$("#blok9").toggleClass('displayblok'),
+	$("#blok10").toggleClass('displayblok'),
+	$("#blok11").toggleClass('displayblok'),
+	$("#blok12").toggleClass('displayblok'),
+	$("#blok13").toggleClass('displayblok'),
+	$("#blok14").toggleClass('displayblok'),
+	$("#blok15").toggleClass('displayblok')
 
 }
 

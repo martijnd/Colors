@@ -2,7 +2,7 @@ body {
 	background-color: #ccc;
 	font-family:Helvetica, Verdana;
 
-	transition: 0.5s;
+	transition: .5s;
 }
 
 #nav {
@@ -13,20 +13,39 @@ body {
 	height: 55px;
 	background-color: #4285f4;
 	box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
-	transition: .5s;
+	transition: .2s;
+}
+
+#nav:hover {
+	background-color: #8bb1f1;
 }
 
 #wrapper {
-	width:100%;
-	margin-left: auto;
-	display: block;
-    margin-right: auto;
-	position:relative;
-	background-color: yellow;
+	width: 15%; 
+	min-width:180px;
+	opacity:0;
+  	min-height: 300px;
+	padding-left:1%;
+	background-color:white;
+	position: absolute;
+	margin-top:54px;
+	transition: all .5s ease;
+	box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
 }
 
-.navclicked {
+#wrapper:after {
+	content: " "; 
+    display: block;
+    clear: both;
+}
+
+.navtopclicked {
 	background-color: white !important;
+}
+
+.navsideclicked {
+	width: 15% !important;
+	opacity: 1 !important;
 }
 
 #hamburgerwrap {
@@ -93,14 +112,21 @@ body {
 #img {
 	margin-top: 1%;
 	width:100px;
-	transition: 60s;
+	transition: all .5s ease;
+}
+
+#kleurtitel {
+	margin-top:10%;
+	display:inline-block;
+	transition: all .5s ease;
+	float: left;
 }
 
 .imghover {
     -webkit-filter: drop-shadow(2px 2px 2px #222);
     margin-top:2% !important;
     margin-left:-0.5%;
-    width:10000px !important;
+    width:120px !important;
 }
 
 .titelclicked {
@@ -108,26 +134,23 @@ body {
 }
 
 #blok1, #blok2, #blok3, #blok4, #blok5, #blok6, #blok7, #blok8, #blok9, #blok10, #blok11, #blok12, #blok13, #blok14, #blok15 {
-	width:17%;
-	height:100px;
+	width:1%;
+	min-width: 20px;
+	opacity:0;
+	height:20px;
 	float:left;
 	margin-left:5px;
 	margin-top: 5px;
-
-
-}
-
-#sectie1 {
-	margin-top: 70px;
-
 }
 
 #sectie1, #sectie2, #sectie3 {
-	float: left;
-	margin-left: auto;
-    margin-right: auto;
-    background-color: yellow;
+	display:inline-block;
 	width:90%;
+}
+
+.displayblok {
+    opacity: 1 !important;
+    transition: all .5s ease;
 }
 
 #blok1 {
@@ -174,9 +197,4 @@ body {
 }
 #blok15 {
 	background-color: #DE5842;
-}
-
-@media all and (max-width:599px){
-	#blok1, #blok2, #blok3, #blok4, #blok5, #blok6, #blok7, #blok8, #blok9, #blok10, #blok11, #blok12, #blok13, #blok14, #blok15 {
-		width:50px;
 }
