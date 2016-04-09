@@ -21,7 +21,6 @@ body {
 }
 
 #wrapper {
-	display:none;
 	width: 15%; 
 	min-width:180px;
 	opacity:0;
@@ -46,7 +45,6 @@ body {
 
 .navsideclicked {
 	width: 15% !important;
-	display: inline !important;
 	opacity: 1 !important;
 }
 
