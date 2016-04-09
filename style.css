@@ -1,13 +1,12 @@
 body {
 	background-color: #ccc;
 	font-family:Helvetica, Verdana;
-	margin:0;
-	padding:0;
+
 	transition: 0.5s;
 }
 
 #nav {
-	width:100%;
+	width:98.5%;
 	position: fixed;
 	z-index: 1;
 	height:10%;
@@ -100,23 +99,23 @@ body {
 }
 
 #blok1, #blok2, #blok3, #blok4, #blok5, #blok6, #blok7, #blok8, #blok9, #blok10, #blok11, #blok12, #blok13, #blok14, #blok15 {
-	width:17%;
-	height:200px;
+	width:20px;
+	height:20px;
 	float:left;
 	margin-left:5px;
-	margin-top: 3%;
-	box-shadow: 10px 10px 5px rgba(0,0,0,0.3);
+	margin-top: 5px;
 
 }
 
 #sectie1 {
 	margin-top: 70px;
+
 }
 
 #sectie1, #sectie2, #sectie3 {
 	float:left;
 	position: relative;
-	padding-left:10%;
+	
 	width:90%;
 }
 
