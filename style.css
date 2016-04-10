@@ -220,6 +220,7 @@ body {
 	font-size: 5em;
 }
 
-img {
-	margin: 0 auto;
+#octo {
+	margin-left: 20%;
+	width: 400px;
 }
