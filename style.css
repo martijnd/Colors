@@ -28,7 +28,7 @@ body {
 	min-width:180px;
 	display:none;
 	z-index: 1;
-  	min-height: 300px;
+  	min-height: 600px;
 	padding-left:1%;
 	background-color:white;
 	position: fixed;
@@ -126,6 +126,23 @@ body {
 	float: left;
 }
 
+
+#Verdana {
+	font-family: Verdana;
+}
+
+#Arial {
+	font-family: Arial;
+}
+
+#Courier {
+	font-family: Courier;
+}
+
+#ComicSans {
+	font-family: 'Comic Sans MS';
+}
+
 .imghover {
     -webkit-filter: drop-shadow(2px 2px 2px #222);
     margin-top:2% !important;
@@ -206,8 +223,8 @@ body {
 	margin-top: 130px;
 	position:relative;
 	margin-left:1%;
-	width:96%;
-	height:500px;
+	padding:2%;
+	width:93%;
 	display: block;
 	background-color: white;
 	box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
@@ -216,8 +233,8 @@ body {
 #box1 {
 	padding-top:20px;
 	padding-left: 32px;
-	font-family: "Helvetica Light";
 	font-size: 5em;
+	overflow:hidden;
 }
 
 #octo {

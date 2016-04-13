@@ -3,6 +3,7 @@ $(document).ready(function(){
 	changeColor();
 	menu();
 	logo();
+	lettertype();
 });
 
 function resize(){
@@ -10,7 +11,31 @@ function resize(){
 	$(document).width($(window).width());
 };
 
+function lettertype(){
+	
 
+	$("#Verdana").click(function(){
+		$('body').css('font-family', 'Verdana');
+		console.log("clicked");
+	}),
+	$("#Arial").click(function(){
+		$('body').css('font-family', 'Arial');
+	}),
+	$("#Courier").click(function(){
+		$('body').css('font-family', 'Courier');
+	}),
+	$("#ComicSans").click(function(){
+		$('body').css('font-family', "'Comic Sans MS'");
+	}),
+	$("#upimg").click(function(){
+		var fontsize = parseInt($("body").css("font-size"));
+		$('body').css('font-size', fontsize+1);
+	}),
+	$("#downimg").click(function(){
+		var fontsize = parseInt($("body").css("font-size"));
+		$('body').css('font-size', fontsize-1)
+	});
+}
 
 function menu(){
 	$("#hamburgerwrap").click(function(){
@@ -21,8 +46,8 @@ function menu(){
 		$("#titel").toggleClass("titelclicked"),
 		$("#navwrapper").toggleClass("navsideclicked"),
 		blokshow();
-		});
-		}
+	});
+}
 
 
 function logo(){
