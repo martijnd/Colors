@@ -6,10 +6,9 @@ body {
 }
 
 #nav {
-	width:98.5%;
+	width:98%;
 	position: fixed;
 	z-index: 2;
-	height:10%;
 	height: 55px;
 	margin-top:10px;
 	background-color: #4285f4;
@@ -128,18 +127,22 @@ body {
 
 
 #Verdana {
+	cursor:pointer;
 	font-family: Verdana;
 }
 
 #Arial {
+	cursor:pointer;
 	font-family: Arial;
 }
 
 #Courier {
+	cursor:pointer;
 	font-family: Courier;
 }
 
 #ComicSans {
+	cursor:pointer;
 	font-family: 'Comic Sans MS';
 }
 
@@ -220,11 +223,11 @@ body {
 }
 
 #wrapper {
-	margin-top: 130px;
+	margin-top: 90px;
 	position:relative;
-	margin-left:1%;
-	padding:2%;
-	width:93%;
+	margin-left:18%;
+	padding:4%;
+	width:73%;
 	display: block;
 	background-color: white;
 	box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
@@ -233,8 +236,10 @@ body {
 #box1 {
 	padding-top:20px;
 	padding-left: 32px;
-	font-size: 5em;
+	min-height: 454px;
+	font-size: 3em;
 	overflow:hidden;
+	transition: .2s;
 }
 
 #octo {

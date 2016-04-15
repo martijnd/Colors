@@ -28,12 +28,12 @@ function lettertype(){
 		$('body').css('font-family', "'Comic Sans MS'");
 	}),
 	$("#upimg").click(function(){
-		var fontsize = parseInt($("body").css("font-size"));
-		$('body').css('font-size', fontsize+1);
+		var fontsize = parseInt($("#box1").css("font-size"));
+		$('#box1').css('font-size', fontsize+5);
 	}),
 	$("#downimg").click(function(){
-		var fontsize = parseInt($("body").css("font-size"));
-		$('body').css('font-size', fontsize-1)
+		var fontsize = parseInt($("#box1").css("font-size"));
+		$('#box1').css('font-size', fontsize-5)
 	});
 }
 
