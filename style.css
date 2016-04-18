@@ -227,7 +227,7 @@ body {
 	position:relative;
 	margin-left:18%;
 	padding:4%;
-	width:73%;
+	width:50%;
 	display: block;
 	background-color: white;
 	box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
@@ -237,7 +237,7 @@ body {
 	padding-top:20px;
 	padding-left: 32px;
 	min-height: 454px;
-	font-size: 3em;
+	font-size: 2em;
 	overflow:hidden;
 	transition: .2s;
 }

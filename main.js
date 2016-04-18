@@ -4,6 +4,7 @@ $(document).ready(function(){
 	menu();
 	logo();
 	lettertype();
+	titlerefresh();
 });
 
 function resize(){
@@ -37,6 +38,14 @@ function lettertype(){
 	});
 }
 
+function titlerefresh(){
+	window.setInterval(function(){
+		datetime= new Date();
+	var timetitle = datetime.getHours() + ":" + datetime.getMinutes() + " - Indexpagina";
+		document.title = timetitle, 500
+	});
+}
+
 function menu(){
 	$("#hamburgerwrap").click(function(){
 		$("#top").toggleClass("crossleft"),
@@ -45,8 +54,16 @@ function menu(){
 		$("#nav").toggleClass("navtopclicked"),
 		$("#titel").toggleClass("titelclicked"),
 		$("#navwrapper").toggleClass("navsideclicked"),
-		blokshow();
-	});
+		blokshow(),
+		$("#box1").click(function(){
+			$("#top").toggleClass("crossleft"),
+			$("#middle").toggleClass("displaynone"),
+			$("#bottom").toggleClass("crossright"),
+			$("#nav").toggleClass("navtopclicked"),
+			$("#titel").toggleClass("titelclicked"),
+			$("#navwrapper").toggleClass("navsideclicked"),
+			blokshow();
+		})});
 }
 
 
